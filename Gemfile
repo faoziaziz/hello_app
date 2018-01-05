@@ -18,9 +18,12 @@ gem 'jbuilder', '~> 2.5'
 
 group :development, :test do
   gem 'sqlite3', '1.3.13'
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'byebug', '9.0.0', platforms: [:mri, :mingw, :x64_mingw]
   #gem 'capybara', '~> 2.13'
   #gem 'selenium-webdriver'
+end
+group :production do
+  gem 'pg', '0.18.4'
 end
 
 group :development do
